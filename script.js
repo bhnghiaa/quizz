@@ -13,9 +13,11 @@ const quit_btn = result_box.querySelector(".buttons .quit");
 
 start_btn.onclick = () => {
   infor_box.classList.add("activeInfo");
+  start_btn.style.display = "none";
 };
 exit_btn.onclick = () => {
   infor_box.classList.remove("activeInfo");
+  start_btn.style.display = "block";
 };
 
 continue_btn.onclick = () => {
